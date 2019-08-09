@@ -8,6 +8,8 @@
   <meta name="description" content="Die besten Rezepte ever, einfach toll zubereitet.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,8 +21,13 @@
       <img src="img/logo.png" alt="Logo für Kochen BTA" width="50">
     </a>
 
-    <nav>
-      <ul id="navi">
+    <button type="button" name="button" id="burgerbutton">
+      <img src="img/menu.svg" alt="burger" height="40">
+    </button>
+
+
+    <nav id="navi">
+      <ul>
         <li>
           <a href="#">Home</a>
         </li>
@@ -38,6 +45,119 @@
     </nav>
     </div>
   </header>
+  <main>
+    <section id="intro">
+      <div>
+        <h1>Die besten Rezepte für Webworker</h1>
+        <p>Es gibt mehr als Pizza & Ravioli</p>
+        <a href="#" class="button">Entdecke die Leckereien</a>
+      </div>
+
+    </section>
+
+    <section  id="rezepte">
+      <div class="wrapper">
+        <h2>Die neuesten Rezepte</h2>
+
+        <div class="row">
+
+          <article class="card">
+            <img src="img/burger.jpg" alt="Burger yeah">
+            <h3>Total leckerer Burger</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#" class="button button-blue">Zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <img src="img/burger.jpg" alt="Burger yeah">
+            <h3>Total leckerer Burger</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#" class="button button-blue">Zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <img src="img/burger.jpg" alt="Burger yeah">
+            <h3>Total leckerer Burger</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#" class="button button-blue">Zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <img src="img/burger.jpg" alt="Burger yeah">
+            <h3>Total leckerer Burger</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#" class="button button-blue">Zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <img src="img/burger.jpg" alt="Burger yeah">
+            <h3>Total leckerer Burger</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#" class="button button-blue">Zum Rezept</a>
+          </article>
+
+          <article class="card">
+            <img src="img/burger.jpg" alt="Burger yeah">
+            <h3>Total leckerer Burger</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <a href="#" class="button button-blue">Zum Rezept</a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <aside class="newsletter">
+    <p>Kein Rezept mehr verpassen <br> Hol dir unseren Newsletter</p>
+
+    <form class="" action="https://www.google.de/search" method="get">
+      <input type="text" name="q" value="" placeholder="Deine Emailadresse">
+      <button type="submit" name="button" class="button">abonnieren</button>
+    </form>
+  </aside>
+
+  <footer>
+    <div class="wrapper">
+      <nav id="footer-nav">
+        <ul>
+          <li>
+            <a href="#">Impressum</a>
+          </li>
+          <li>
+            <a href="#">Datenschutz</a>
+          </li>
+
+          <li>
+            <a href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav id="social">
+        <ul>
+          <li class="icon-facebook">
+            <a href="#"></a>
+          </li>
+          <li class="icon-instagram">
+            <a href="#"></a>
+          </li>
+          <li class="icon-youtube">
+            <a href="#"></a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </footer>
+
+
+  <script type="text/javascript" src="js/menu.js">
+  </script>
 </body>
 
 </html>
