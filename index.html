@@ -1,47 +1,147 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <!-- Das ist ein Kommentar -->
-    <title>
-      BTA Kochen | Abgefahren!
-      </title>
-      <meta name="description" content="Tolle Rezepte für Menschen am Rechner lecker supi Essen">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Das Stylesheet mit dem Linkelement verknüpfen -->
-      <link rel="stylesheet" href="Style.css">
-  </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img src="img/logo.png" alt="Logo BTA Kochen" title="Das ist der Titel, der dazu kommt" Width="50" height="40">
-      </a>
-      <button type="button" name="button">
-        <img src="img/menu.svg" alt="Menüdings zum Drücken" height="36">
-      </button>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">
-              HOME
-            </a>
-            </li>
-            <li>
-            <a href="#">
-              REZEPTE
-            </a>
-            </li>
-            <li>
-            <a href="#">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Das ist ein Kommentar -->
+  <title>
+    BTA Kochen | Abgefahren!
+  </title>
+  <meta name="description" content="Tolle Rezepte für Menschen am Rechner lecker supi Essen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Das Stylesheet mit dem Linkelement verknüpfen -->
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+  <header id="header">
+
+    <a href="index.html">
+      <img src="img/logo.png" alt="Logo BTA Kochen" title="Das ist der Titel, der dazu kommt" Width="50" height="40">
+    </a>
+    <button type="button" name="button" id="menu-button">
+      <img src="img/menu.svg" alt="Menüdings zum Drücken" height="36">
+    </button>
+    <nav id="main-navigation">
+      <ul>
+        <li>
+          <a href="#">
+            HOME
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            REZEPTE
+          </a>
+        </li>
+        <li>
+          <a href="#">
             KATEGORIEN
-            </a>
-            </li>
-            <li>
-              <a href="#">
+          </a>
+        </li>
+        <li>
+          <a href="#">
             ÜBER UNS
+          </a>
+      </ul>
+    </nav>
+  </header>
+  <main id="Hauptteil">
+    <section id="hero">
+      <div class:"herobox">
+        <h1>Die besten Rezepte für Webworker</h1>
+        <p>Es gibt mehr als Pizza und Ravioli</p>
+        <a href="#rezepte" class="button">Entdecke die Leckereien</a>
+      </div>
+    </section>
+    <section id="rezepte">
+      <h2>
+        Die neuesten Rezepte
+      </h2>
+      <div class="row">
+        <article class="card">
+          <a href="#">
+            <img src="img/kuerbissuppe.jpg" alt="Leckere dampfende Kürbissuppe">
+          </a>
+          <h3>
+            <a href="">
+              Kernige Kürbissuppe
+            </a>
+          </h3>
+          <p>
+            <a href="">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </a>
+          </p>
+          <a href="" class="button">
+            zum Rezept
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <img src="img/kuerbissuppe.jpg" alt="Leckere dampfende Kürbissuppe">
+          </a>
+          <h3>
+            <a href="">
+              Kernige Kürbissuppe
+            </a>
+          </h3>
+          <p>
+            <a href="">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </a>
+          </p>
+          <a href="" class="button">
+            zum Rezept
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <img src="img/kuerbissuppe.jpg" alt="Leckere dampfende Kürbissuppe">
+          </a>
+          <h3>
+            <a href="">
+              Kernige Kürbissuppe
+            </a>
+          </h3>
+          <p>
+            <a href="">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </a>
+          </p>
+          <a href="" class="button">
+            zum Rezept
+          </a>
+        </article>
+      </article>
+      <article class="card">
+        <a href="#">
+          <img src="img/kuerbissuppe.jpg" alt="Leckere dampfende Kürbissuppe">
         </a>
-        </ul>
-      </nav>
-    </header>
-  </body>
+        <h3>
+          <a href="">
+            Kernige Kürbissuppe
+          </a>
+        </h3>
+        <p>
+          <a href="">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </a>
+        </p>
+        <a href="" class="button">
+          zum Rezept
+        </a>
+      </article>
+
+      </div>
+    </section>
+  </main>
+  <script src="js/menu.js">
+
+  </script>
+
+
+
+</body>
+
 </html>

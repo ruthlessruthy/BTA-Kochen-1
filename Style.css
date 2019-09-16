@@ -1,16 +1,165 @@
-body{
-background-color: rgb(176, 19, 45);
-margin: 0;
-font-family: Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
 }
-a{
+
+body {
+  background-color: transparent;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+nav a {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  transition: all .35s linear;
 }
-ul{
+
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+#header {
+  height: 60px;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#main-navigation {
+  display: none;
+}
+
+#menu-button {
+  background: transparent;
+  border: none;
+}
+
+#hero {
+  background-image: url(img/intro.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero {
+  align: center;
+}
+
+#hero h1 {
+  color: white;
+  font-size: 40px;
+}
+
+#hero p {
+  color: white;
+  font-size: 30px;
+}
+
+.button {
+  color: #374a67;
+  border: 1px;
+  border-style: solid;
+  background: white;
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: ease 1s;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background: #374a67;
+  color: white;
+  border: none;
+}
+
+.card {
+  text-align: center;
+  border: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 1);
+  color: #828282;
+      margin: 1rem;
+}
+
+.card a {
+  color: black;
+  text-decoration: none;
+}
+
+.card p a {
+  color: #828282;
+}
+
+.card h3 a {
+  color: black;
+}
+
+.card .button {
+  color: #fff;
+  background: #374a67;
+}
+
+.card .button:hover {
+  color: #374a67;
+  border: 1px;
+  border-style: solid;
+  background: white;
+}
+
+.card img {
+  width: 100%
+}
+
+@media (min-width: 960px) {
+  #main-navigation {
+    display: block;
+  }
+
+  #main-navigation ul {
+    display: flex;
+  }
+
+  nav li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  nav li:last-child {
+    margin-right: 0;
+  }
+
+  nav a:hover {
+    background: #d6e344;
+    color: #596e7a
+  }
+
+  #menu-button {
+    display: none;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
 }
