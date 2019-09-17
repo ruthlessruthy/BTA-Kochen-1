@@ -11,6 +11,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Das Stylesheet mit dem Linkelement verknüpfen -->
   <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link href="https://fonts.googleapis.com/css?family=Lexend+Exa&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -113,33 +115,85 @@
             zum Rezept
           </a>
         </article>
-      </article>
-      <article class="card">
-        <a href="#">
-          <img src="img/kuerbissuppe.jpg" alt="Leckere dampfende Kürbissuppe">
-        </a>
-        <h3>
-          <a href="">
-            Kernige Kürbissuppe
+        </article>
+        <article class="card">
+          <a href="#">
+            <img src="img/kuerbissuppe.jpg" alt="Leckere dampfende Kürbissuppe">
           </a>
-        </h3>
-        <p>
-          <a href="">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <h3>
+            <a href="">
+              Kernige Kürbissuppe
+            </a>
+          </h3>
+          <p>
+            <a href="">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </a>
+          </p>
+          <a href="" class="button">
+            zum Rezept
           </a>
-        </p>
-        <a href="" class="button">
-          zum Rezept
-        </a>
-      </article>
-
+        </article>
       </div>
     </section>
   </main>
-  <script src="js/menu.js">
 
+  <script src="js/menu.js">
   </script>
 
+  <aside class="sidebar">
+    <h2>
+      <span>
+        Kein Rezept mehr verpassen<br>
+        Hol dir unseren Newsletter
+      </span>
+    </h2>
+    <form class="newsletter" action="" method="get">
+      <input type="email" name="emailadresse" value="" placeholder="Deine Emailadresse" required>
+      <button type="submit" class="button" name="button">abonnieren</button>
+    </form>
+  </aside>
+
+  <footer>
+    <nav id="footer-nav">
+      <ul>
+        <li>
+          <a href="#">
+            Impressum </a>
+        </li>
+        <li>
+          <a href="#">
+            Datenschutz
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Kontakt
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav id="social-nav">
+      <ul>
+        <li class="icon-facebook">
+          <a href="#">
+          </a>
+        </li>
+
+        <li class="icon-instagram">
+          <a href="#">
+          </a>
+        </li>
+
+        <li class="icon-youtube">
+          <a href="#">
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+  </footer>
 
 
 </body>

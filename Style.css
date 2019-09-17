@@ -1,11 +1,11 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
 body {
   background-color: transparent;
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Lexend Exa', sans-serif;
 }
 
 nav a {
@@ -31,6 +31,8 @@ ul {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-align: center;
+  position: fixed;
 }
 
 #main-navigation {
@@ -63,9 +65,45 @@ ul {
   font-size: 40px;
 }
 
+#rezepte h2 {
+  text-align: center;
+}
+
 #hero p {
   color: white;
   font-size: 30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  min-width: 100%;
+  background: white;
+  margin: 1rem;
+}
+
+#footer-nav {
+  display: flex;
+  text-align: center;
+  font-size: 1rem;
+  padding: 2rem;
+}
+
+#social-nav ul {
+  display: flex;
+  font-size: 2rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+footer a {
+  color: #04122b;
+  margin: 1rem;
 }
 
 .button {
@@ -97,7 +135,7 @@ ul {
   overflow: hidden;
   box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 1);
   color: #828282;
-      margin: 1rem;
+  margin: 1rem;
 }
 
 .card a {
@@ -116,6 +154,8 @@ ul {
 .card .button {
   color: #fff;
   background: #374a67;
+  margin: 1rem;
+  display: block;
 }
 
 .card .button:hover {
@@ -129,6 +169,44 @@ ul {
   width: 100%
 }
 
+.card p {
+  margin: 1rem;
+}
+
+.sidebar {
+  background: #04122B;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.newsletter input {
+  height: 49px;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.newsletter .button {
+  margin-left: -4px;
+  border: 1px solid #04122b;
+}
+
+.overflow{
+overflow: hidden;
+}
+
+#main-navigation.show {
+  display: block;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background: white;
+  width: 100%;
+  height: calc(100vh - 60px);
+  padding: 3rem 0;
+  line-height: 3rem;
+}
+
 @media (min-width: 960px) {
   #main-navigation {
     display: block;
@@ -136,6 +214,17 @@ ul {
 
   #main-navigation ul {
     display: flex;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #footer-nav ul {
+    display: flex;
+    flex-direction: row;
   }
 
   nav li {
@@ -158,7 +247,6 @@ ul {
 
   .row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem;
   }
